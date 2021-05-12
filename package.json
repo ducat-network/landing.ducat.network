@@ -1,0 +1,21 @@
+{
+  "name": "landing.ducat.network",
+  "version": "0.0.2",
+  "description": "Bringing the best of Decentralized Finance to the network, as well as connecting DUCAT to DeFi on other chains.",
+  "main": "app.js",
+  "scripts": {
+    "start": "npm run pi && cross-env NODE_ENV=production node app.js",
+    "pi": "npm i"
+  },
+  "author": "© Ducat Team <hello@ducat.network>",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "cross-env": "^7.0.3"
+  },
+  "dependencies": {
+    "config": "^3.3.6",
+    "cors": "^2.8.5",
+    "express": "^4.17.1"
+  }
+}

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--body-bg-default);
+}
+
+a {
+    text-decoration: none;
+}
+
+input[type=button] {
+    padding: 17px 34px;
+    background-color: var(--secondary);
+    border-radius: 10px;
+    font: 18px 'Jost Regular';
+    color: #FFF;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: rgb(151, 48, 255);
+}
+
+@media (max-width: 800px) {
+    input[type=button] {
+        padding: 9px 22px;
+    }
+}

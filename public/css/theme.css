@@ -1,0 +1,12 @@
+:root {
+    --primary: #2F0F48;
+    --secondary: #A142FF;
+    --body-bg-default: #F7F8FA;
+    --default-text-color: rgba(77, 40, 105, 0.7);
+    --brand-name-font: 24px 'Jost Medium';
+    --brand-name-font-adaptive: 20px 'Jost Medium';
+    --nav-name-font: 18px 'Jost Regular';
+    --nav-name-font-adaptive: 14px 'Jost Regular';
+    --nav-name-color-default: #361153;
+    --nav-name-color-active: #A142FF;
+}

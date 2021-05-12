@@ -1,0 +1,216 @@
+@import '../fonts.css';
+@import '../theme.css';
+@import '../default.css';
+
+@import '../components/container.css';
+@import '../components/brand.css';
+
+body {
+    background-color: #fff !important;
+}
+
+.main-navigation {
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    display: flex;
+}
+
+.main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.main-navigation__item {
+    color: var(--nav-name-color-default);
+    font: var(--nav-name-font);
+}
+
+.main-navigation__item-hover:hover {
+    color: var(--nav-name-color-active);
+}
+
+@media (max-width: 800px) {
+    .main-navigation > .container {
+        padding: 0 25px;
+    }
+
+    .main-navigation__name {
+        font: var(--nav-name-font-adaptive);
+    }
+
+    .brand__logo {
+        margin: 0 15px 0 0;
+    }
+
+    .brand__name {
+        font: var(--nav-name-font-adaptive);
+    }
+}
+
+.doc-info {
+    width: 100%;
+    height: 100px;
+    background-color: #F5F8FA;
+    border-bottom: 1px solid #e1e8ee;
+    border-top: 1px solid #e1e8ee;
+}
+
+.doc-info > .container {
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+.doc-info__name {
+    font: 32px 'Jost Medium';
+    margin: 0 15px 0 0;
+}
+
+.doc-info__version {
+    font: 16px 'Jost Regular';
+    padding: 4px 10px;
+    background-color: #A142FF;
+    color: #fff;
+}
+
+@media (max-width: 800px) {
+    .doc-info > .container {
+        padding: 0 25px;
+    }
+}
+
+.general-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-menu {
+    position: fixed;
+    left: 0;
+    margin: 50px 0 0 0;
+    width: 420px;
+    transition: left .6s, top .6s;
+}
+
+.root-tree-icon, .sub-root-tree-icon {
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: 0 5px 0 0;
+}
+
+.root-tree-icon {
+    background-image: url('../../assets/imgs/content/docs/menu-docs/root-tree.svg');
+}
+
+.sub-root-tree-icon {
+    background-image: url('../../assets/imgs/content/docs/menu-docs/sub-tree.svg');
+}
+
+.main-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-menu ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-menu > ul {
+    width: fit-content;
+    font: 16px 'Jost Medium';
+    color: #000;
+}
+
+.main-menu > ul > li, .main-menu > ul > ul > li {
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main-menu > ul > li > a { color: #000; }
+.main-menu > ul > ul > li > a { color: var(--secondary); }
+
+.main-menu > ul > li {
+    font: 16px 'Jost Medium';
+    color: #000;
+    margin: 0 0 7px 0;
+}
+
+.main-menu > ul > ul > li {
+    font: 16px 'Jost Regular';
+    color: var(--secondary);
+    margin: 0 0 7px 15px;
+}
+
+.general-content article img {
+    max-width: 600px;
+    width: 100%;
+}
+
+.general-content article {
+    width: 650px;
+    margin: 0 0 0 420px;
+    border-left: 1px solid #e1e8ee;
+    padding: 30px 50px;
+    transition: margin .6s;
+}
+
+.content-title-icon, .sub-content-title-icon {
+    width: 22px;
+    height: 22px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    margin: 0 7px 0 0;
+}
+
+.content-title-icon {
+    background-image: url('../../assets/imgs/content/docs/menu-docs/content-title.svg');
+}
+
+.sub-content-title-icon {
+    background-image: url('../../assets/imgs/content/docs/menu-docs/sub-content-title.svg');
+}
+
+.general-content article section {
+    margin: 0 0 50px 0;
+}
+
+.general-content article section > h4 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font: 24px 'Jost SemiBold';
+}
+
+.general-content article section > hr {
+    border-top: 1px solid #e1e8ee;
+    margin: 15px 0;
+}
+
+.general-content article section > p {
+    font: 16px 'Jost Light';
+    color: #333;
+}
+
+@media (max-width: 800px) {
+    .main-menu {
+        left: -420px;
+    }
+
+    .general-content article {
+        margin: 0;
+    }
+}

@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <title>Ducat</title>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <link rel='stylesheet' href='./css/index.css'>
+        <link rel='shortcut icon' href='./assets/imgs/favicon.ico'>
+        <script src='./js/navbar.js' defer></script>
+    </head>
+    <body>
+        <nav class='main-navigation'>
+            <div class='container'>
+                <div class='brand'>
+                    <img src='./assets/imgs/logo.svg' alt='logo' class='brand__logo'>
+                    <span class='brand__name'>DUCAT NETWORK</span>
+                </div>
+                <div class='main-navigation__list'>
+                    <a href='#home' class='main-navigation__item main-navigation__item-active'>
+                        <span class='main-navigation__name'>Home</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#about' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>About</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#yield' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Yield</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#vaults' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Vaults</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#lending' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Lending</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#integrations' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Integrations</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#roadmap' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Roadmap</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                    <a href='#sale' class='main-navigation__item main-navigation__item-hover'>
+                        <span class='main-navigation__name'>Sale</span>
+                        <div class='main-navigation__underline'></div>
+                    </a>
+                </div>
+            </div>
+            <div class='main-navigation__controller'></div>
+        </nav>
+        <section id='home' class='home'>
+            <div class='container'>
+                <div class='sub-container'>
+                    <div class='home__general'>
+                        <h2>Guaranteed price on exchanges +107% of the DeFi - ico price.</h2>
+                        <p class='home__short-desc'>Guaranteed online draw upon completion of the public sale 100 ETH + 100,000 DUCAT</p>
+                        <div class='auto-carousel'>
+                            <div class='auto-carousel__item auto-carousel__item-showed'>Lending Markets</div>
+                            <div class='auto-carousel__item'>Yield Farming</div>
+                            <div class='auto-carousel__item'>Cross-Chain Vaults</div>
+                        </div>
+                    </div>
+                    <div class='home__join'>
+                        <img src='./assets/imgs/content/home_join_us.svg' alt='join_us'>
+                        <input type='button' value='COMMUNITY TOKEN SALE ›' onclick="document.querySelector('#sale').scrollIntoView({ alignToTop: true, behavior: 'smooth' })">
+                    </div>
+                </div>
+                <div class='home__contact'>
+                    <p class='home__hint'>Bringing the best of <b>Decentralized Finance</b> to the network, as well as connecting <b>DUCAT</b> to DeFi on other chains.</p>
+                    <div class='connect-us'>
+                        <p>Connect to us on</p>
+                        <div class='connect-us__separator'></div>
+                        <div class='connect-us__networks'>
+                            <div class='connect-us__network sn-telegram' onclick="window.open('https://t.me/ducatNetwork')"></div>
+                            <div class='connect-us__network sn-twitter' onclick="window.open('https://twitter.com/DucatNetwork')"></div>
+                            <div class='connect-us__network sn-medium' onclick="window.open('https://ducat-network.medium.com/')"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='about' class='about'>
+            <div class='container'>
+                <img src='./assets/imgs/content/about_network.svg' alt='about_img'>
+                <div class='about__content'>
+                    <div class='content-title'>About DUCAT NETWORK</div>
+                    <div class='content-hint'>Decentralized Finance (DeFi) is taking over the digital economy world.</div>
+                    <p class='about__general'>Is an innovative scalable blockchain that DUCAT needs. DUCAT is a package of DUCAT infrastructure.</p>
+                    <img src='./assets/imgs/content/about_network.svg' alt='about_img'>
+                    <p class='about__hint'>DUCAT will bring every component needed to form a core of Decentralized Finance. This includes Yield Farming, Vaults & Lending Markets. Then DUCAT will interconnect DUCAT with other blockchains.</p>
+                    <div class='contact-email'>
+                        <img src='./assets/imgs/content/email.svg' alt='email'>
+                        <span>hello@ducat.network</span>
+                    </div>
+                    <input type='button' value='Read docs ›' onclick="location.href = './docs.html'">
+                </div>
+            </div>
+        </section>
+        <section id='yield' class='yield'>
+            <div class='container'>
+                <div class='yield__content'>
+                    <div class='content-title'>Yield Farming</div>
+                    <div class='content-hint'>Discover how DUCAT yield farming works</div>
+                    <p class='yield__general'>DUCAT utilizes Yield Farming technique to distribute 10% of DUCAT over the course of 2 years to DUCAT and DOT farmers, as well as to DUCAT Liquidity Providers.</p>
+                    <img src='./assets/imgs/content/yield.svg' alt='yield_img'>
+                    <ul>
+                        <li><b>3 Million</b> DUCAT will be farmed by DUCAT holders.</li>
+                        <li><b>6 Million</b> DUCAT will be farmed by DUCAT/ETH Liquidity Providers.</li>
+                        <li><b>1 Million</b> DUCAT for developers team</li>
+                    </ul>
+                </div>
+                <img src='./assets/imgs/content/yield.svg' alt='yield_img'>
+            </div>
+        </section>
+        <section id='vaults' class='vaults'>
+            <div class='container'>
+                <img src='./assets/imgs/content/vaults.svg' alt='vaults_img'>
+                <div class='vaults__content'>
+                    <div class='content-title'>Cross-Chain Vaults</div>
+                    <div class='content-hint'>Discover how DUCAT on-chain and cross-chain vaults work</div>
+                    <p class='vaults__general'>Vaults are smart contracts that continuously route your funds to utilize them with the best yield farming strategies and participate in the most profitable pools. DUCAT will launch Vaults where users can provide DUCAT, DOT and stablecoins in order to participate in the most profitable on-chain and cross-chain strategies to earn the most yield on their asset.</p>
+                    <img src='./assets/imgs/content/vaults.svg' alt='vaults_img'>
+                    <ul>
+                        <li><b>Vaults v1 (Delegated Staking):</b> Initial on-chain DUCAT Vault will generate profit from delegated staking, which is estimated at 20% APY for DOT holders.</li>
+                        <li><b>Vaults v2 (Cross-chain):</b> DUCAT will launch Vaults on ETH blockchain where most of the profit-generating opportunities present right now. These ETH vaults will utilize yield farming, supplying funds to secure lending markets and stablecoins farming. Vault profits can be converted into ERC20 DUCAT and wrapped to the blockchain.</li>
+                        <li><b>Vaults v3 (On-chain DeFi):</b> With launch of DUCAT (such as Polkastarter) on the blockchain, profit can be generated by arbitrage opportunities and liquidity providing. These types of strategies will be utilized in third iteration of DUCAT Vaults.</li>
+                        <li><b>1 Million DUCAT (5% of total supply) is dedicated for vault incentives distribution, which means that aside from any yield generated from profitable vault strategies vault will also distribute DUCAT to vault stakers boosting their returns even more.</b></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section id='lending' class='lending'>
+            <div class='container'>
+                <div class='lending__content'>
+                    <div class='content-title'>Lending Markets</div>
+                    <div class='content-hint'>Discover how DUCAT lending markets work</div>
+                    <p class='lending__general'>DUCAT will launch first ever Lending Market smart contract and DApp to escalate DUCAT growth on the chain.</p>
+                    <img src='./assets/imgs/content/lending.svg' alt='lending_img'>
+                    <p class='lending__hint'>
+                        DUCAT will utilize tried and trusted technologies from Compound and Aave (leading lending
+                        protocols on Ethereum) to launch Lending Markets. Lending market is a decentralized
+                        trustless autonomous application that allows you to borrow and lend crypto assets through a
+                        platform ruled by smart contracts. This is made possible thanks to a clever system of interest
+                        making pools, where users can supply and borrow cryptocurrencies. To borrow cryptocurrencies you have to first supply another one as a collateral for a loan. Lending market is one fo the core components needed to grow DUCAT ecosystem.
+                    </p>
+                </div>
+                <img src='./assets/imgs/content/lending.svg' alt='vaults_img'>
+            </div>
+        </section>
+        <section id='integrations' class='integrations'>
+            <div class='container'>
+                <div class='integrations__content'>
+                    <div class='content-title'>DUCAT will integrate with leading DeFi products</div>
+                    <div class='content-hint'>We will incorporate these top performing products within DUCAT cross-chain vaults for the most profitable strategies</div>
+                    <div class='integration-list'>
+                        <div class='integration-list__row'>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/yearn.svg' alt='yearn_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>Yearn</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-yearn'></div>
+                            </div>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/aave.svg' alt='aave_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>Aave</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-aave'></div>
+                            </div>
+                        </div>
+                        <div class='integration-list__row'>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/curveDAO.svg' alt='curve_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>Curve DAO</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-curve'></div>
+                            </div>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/compound.svg' alt='compound_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>Compound</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-compound'></div>
+                            </div>
+                        </div>
+                        <div class='integration-list__row'>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/uniswap.svg' alt='uniswap_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>Uniswap</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-uniswap'></div>
+                            </div>
+                            <div class='integration-item'>
+                                <div class='integration-item__info'>
+                                    <img src='./assets/imgs/content/integrations/sushi-swap.svg' alt='sushi-swap_integration' class='integration-item__icon'>
+                                    <span class='integration-item__name'>SushiSwap</span>
+                                </div>
+                                <div class='integration-item__progress integration-item__progress-sushiswap'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='roadmap' class='roadmap'>
+            <div class='container'>
+                <div class='roadmap__content'>
+                    <div class='content-title'>Roadmap</div>
+                    <div class='content-hint'>Explore Ducat Proposed Roadmap for Launching the Next Generation of DeFi</div>
+                    <div class='roadmap__container'>
+                        <div class='roadmap__column'>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q1 2020</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>Initial Project Idea</div>
+                                    <ul>
+                                        <li>Formed the main team</li>
+                                        <li>DeFi and Innovation Market Research</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q2 - Q4 2020</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>Project Development</div>
+                                    <ul>
+                                        <li>Project development</li>
+                                        <li>Development of the basic principles of the project and DUCAT tokenomics</li>
+                                        <li>A round of seed funding from industry leaders</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q1 2021</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>Whitelist Community Sale</div>
+                                    <ul>
+                                        <li>Public sale of tokens to the DUCAT community</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q2 2021</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>DeFi begins</div>
+                                    <ul>
+                                        <li>Profitability of ERC20 DUCAT on the Ethereum network</li>
+                                        <li>Development DUCAT Vault v1 - Launch</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='roadmap__column'>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q3 2021</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>DeFi escalates</div>
+                                    <ul>
+                                        <li>Preparing DUCAT to launch Polkadot</li>
+                                        <li>Launch DUCAT Governance Staking</li>
+                                        <li>Launch of DUCAT Vault v2</li>
+                                        <li>Integration with leading DeFi projects</li>
+                                        <li>Launching DUCAT Mixer</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>Q4 2021</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>DUCAT Takes Off</div>
+                                    <ul>
+                                        <li>Launching DUCAT Vault v3</li>
+                                        <li>Integration of DUCAT with DEX in the Polkadot network</li>
+                                        <li>Launch of the lending market</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class='roadmap__item'>
+                                <div class='roadmap__date'>2022 and beyond</div>
+                                <div class='roadmap__info'>
+                                    <div class='roadmap__title'>DeFi All</div>
+                                    <ul>
+                                        <li>Improvement of DUCAT strategies</li>
+                                        <li>Empowering DAOs to give full control to the community</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id='our-team' class='our-team'>
+            <div class='container'>
+                <div class='our-team__content'>
+                    <div class='content-title'>Our Team</div>
+                    <div class='content-hint'>Meet the brains behind Ducat</div>
+                    <div class='team-list'>
+                        <div class='teammate-info'>
+                            <img src='./assets/imgs/content/team/tim.jpeg' alt='teammate_tim' class='teammate-info__icon'>
+                            <b class='teammate-info__name'>Tim Gott</b>
+                            <p class='teammate-info__position'>Founder, Early DUCAT Ambassador</p>
+                        </div>
+                        <div class='teammate-info'>
+                            <img src='./assets/imgs/content/team/brycen.jpeg' alt='teammate_brycen' class='teammate-info__icon'>
+                            <b class='teammate-info__name'>Brycen Adams</b>
+                            <p class='teammate-info__position'>Solidity developer, Blockchain developer since 2018</p>
+                        </div>
+                        <div class='teammate-info'>
+                            <img src='./assets/imgs/content/team/josue.jpeg' alt='teammate_josue' class='teammate-info__icon'>
+                            <b class='teammate-info__name'>Josue Allen</b>
+                            <p class='teammate-info__position'>Web developer</p>
+                        </div>
+                        <div class='teammate-info'>
+                            <img src='./assets/imgs/content/team/neil.jpeg' alt='teammate_neil' class='teammate-info__icon'>
+                            <b class='teammate-info__name'>Neil Baker</b>
+                            <p class='teammate-info__position'>Business Operations & Strategic Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="sale" class="sale">
+            <div class="container">
+                <h2>DUCAT Token Sale</h2>
+                <p class="sale__default">Token Sale Contract:</p>
+                <b class="sale__address">0x06343c67f77BDd4BaccebbbA0Ce65C8338394b38</b>
+                <p class="sale__default">Send ETH to this contract to receive DUCAT. Price of 1 DUCAT - 0.0004 ETH</p>
+                <p class="sale__default">1ETH - 2500 DUCAT</p>
+                <p class="sale__default">You can send ETH any quantity.</p>
+                
+                <br>
+                <p class="sale__default">Send only from personal wallets where you own the private key (such as MyEtherWallet, MyCrypto, ImToken, Metamask and etc.)</p>
+                <br>
+                <b class="sale__default">Please set Gas Limit to 150,000 otherwise your transaction will fail.</b>
+                <br>
+                <br>
+                <b class="sale__default">Guaranteed online draw upon completion of the public sale100 ETH + 100000 DUCAT</b>
+                <p class="sale__default">*After the end of the public sale, the starting price for Uniswap will be 1 DUCAT FOR 0.00082 ETH</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                <a href="https://etherscan.io/address/0x06343c67f77BDd4BaccebbbA0Ce65C8338394b38" target="_blank"> &gt; &gt; Contract Source Code &lt; &lt; </a>
+            </div>
+        </section>
+        <section id='exchangers' class='exchangers'>
+            <div class='container'>
+                <div class='exchangers__content'>
+                    <div class='content-title'>Exchanges</div>
+                    <div class='content-hint'>A list of exchanges where exchanges take place</div>
+                    <div class='exchangers__list'>
+                        <div class='exchanger__item'>
+                            <img src='./assets/imgs/content/exchangers/uniswap.svg' alt='ex_uniswap' class='exchanger__icon'>
+                            <span class='exchanger__name'>Uniswap</span>
+                        </div>
+                        <div class='exchanger__item'>
+                            <img src='./assets/imgs/content/exchangers/pro-bit.svg' alt='ex_pro-bit' class='exchanger__icon'>
+                            <span class='exchanger__name'>ProBit</span>
+                        </div>
+                        <div class='exchanger__item'>
+                            <img src='./assets/imgs/content/exchangers/gate.io.svg' alt='ex_gate.io' class='exchanger__icon'>
+                            <span class='exchanger__name'>gate.io</span>
+                        </div>
+                        <div class='exchanger__item'>
+                            <img src='./assets/imgs/content/exchangers/bitfinex.svg' alt='ex_bitfinex' class='exchanger__icon'>
+                            <span class='exchanger__name'>bitfinex</span>
+                        </div>
+                        <div class='exchanger__item'>
+                            <img src='./assets/imgs/content/exchangers/sushi-swap.svg' alt='ex_sushiswap' class='exchanger__icon'>
+                            <span class='exchanger__name'>SushiSwap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class='container'>
+                <span>Copyright © DUCAT 2021. All rights reserved.</span>
+            </div>
+        </footer>
+    </body>
+</html>

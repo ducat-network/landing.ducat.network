@@ -1,0 +1,1064 @@
+@import 'fonts.css';
+@import 'theme.css';
+@import 'default.css';
+
+@import 'components/container.css';
+@import 'components/brand.css';
+
+@media (max-width: 1140px) {
+    .brand__logo {
+        margin: 0 15px;
+    }
+
+    .brand__name {
+        font: var(--nav-name-font-adaptive);
+    }
+}
+
+.main-navigation {
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    width: 100%;
+    height: 85px;
+    background-color: #fff;
+    display: flex;
+}
+
+.main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.main-navigation__item {
+    color: var(--nav-name-color-default);
+    margin: 7px 20px 0  0;
+}
+
+.main-navigation__item:last-child {
+    margin: 7px 0 0 0;
+}
+
+.main-navigation__name {
+    font: var(--nav-name-font);
+}
+
+.main-navigation__underline {
+    width: 0;
+    height: 2px;
+    margin: 7px 0 0 0;
+}
+
+.main-navigation__item-active > .main-navigation__name, .main-navigation__item-hover:hover > .main-navigation__name {
+    color: var(--nav-name-color-active);
+}
+
+.main-navigation__item-active > .main-navigation__underline, .main-navigation__item-hover:hover > .main-navigation__underline {
+    width: 60%;
+    transition: width .6s;
+    background: var(--nav-name-color-active);
+}
+
+.main-navigation__controller {
+    display: none;
+    width: 85px;
+    height: 85px;
+    background-image: url('../assets/imgs/navbar/default.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 28px 28px;
+}
+
+.main-navigation__controller-active {
+    background-image: url('../assets/imgs/navbar/close.svg');
+}
+
+@media (max-width: 1140px) {
+    .main-navigation__name {
+        font: var(--nav-name-font-adaptive);
+    }
+
+    .main-navigation__item {
+        margin: 7px 10px 0  0;
+    }
+
+    .main-navigation__item:last-child {
+        margin: 7px 0 0 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .main-navigation__list {
+        display: none;
+        width: 100%;
+        position: fixed;
+        flex-direction: column;
+        left: 0;
+        top: 80px;
+        padding: 0 15px;
+    }
+
+    .main-navigation__list-open {
+        display: flex;
+    }
+
+    .main-navigation__item {
+        width: 100%;
+        margin: 0;
+        padding: 15px 0;
+        border-bottom: 1px solid #e5e5e5;
+    }
+
+    .main-navigation__item:last-child {
+        border-bottom: 0;
+        margin: 0;
+    }
+
+    .main-navigation__underline {
+        display: none;
+    }
+
+    .main-navigation__controller {
+        display: block;
+    }
+}
+
+.home {
+    margin: 85px 0 0 0;
+    background-color: #FAFAFA;
+}
+
+.home > .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 80px 0 0 0;
+}
+
+.home > .container > .sub-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.home__general {
+    flex: 2;
+    padding: 0 25px 0 0;
+}
+
+.home__general h2 {
+    font: 44px 'Jost Medium';
+    color: var(--primary);
+    line-height: 42px;
+}
+
+.home__short-desc {
+    font: 20px 'Jost Regular';
+    color: var(--primary);
+    margin: 10px 0 0 0;
+}
+
+.home__hint {
+    font: 25px 'Jost Regular';
+    color: #4D2869;
+}
+
+.home__contact {
+    width: 70%;
+}
+
+.connect-us {
+    margin: 60px 0 40px 0;
+    font: 16px 'Jost Regular';
+    color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.connect-us__separator {
+    width: 90px;
+    height: 1px;
+    background-color: #D9DBE2;
+    margin: 0 8px;
+}
+
+.connect-us__networks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.connect-us__network {
+    width: 60px;
+    height: 60px;
+    background-color: #FFF;
+    border: 1px solid #DCDEE4;
+    border-radius: 10px;
+    margin: 0 8px 0 0;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 28px 28px;
+    cursor: pointer;
+}
+
+.connect-us__network:last-child {
+    margin: 0;
+}
+
+.sn-telegram {
+    background-image: url('../assets/imgs/content/sn/telegram.svg');
+}
+
+.sn-twitter {
+    background-image: url('../assets/imgs/content/sn/twitter.svg');
+}
+
+.sn-medium {
+    background-image: url('../assets/imgs/content/sn/medium.svg');
+}
+
+.home__join {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.home__join > img {
+    margin: 0 0 70px 0;
+}
+
+@media (max-width: 470px) {
+    .home__join img {
+        width: 220px;
+        height: 230px;
+        margin: 0 0 10px 0;
+    }
+}
+
+@media (max-width: 800px) {
+    .home > .container {
+        padding: 20px 0 0 0;
+        justify-content: flex-start;
+    }
+
+    .home > .container > .sub-container {
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .home__general {
+        width: 100%;
+    }
+
+    .home__general h2 {
+        font: 32px 'Jost Medium';
+        line-height: 32px;
+    }
+
+    .home__short-desc {
+        font: 12px 'Jost Regular';
+    }
+
+    .home__hint {
+        font: 16px 'Jost Regular';
+    }
+
+    .home__join {
+        width: 100%;
+    }
+
+    .home__join > input[type=button] {
+        padding: 9px 22px;
+    }
+
+    .home__contact {
+        width: 100%;
+        padding: 0 25px;
+    }
+
+    .home__join img {
+        margin: 0 0 10px 0;
+    }
+
+    .connect-us {
+        font: 14px 'Jost Regular';
+        margin: 10px 0 20px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .connect-us p {
+        margin: 0 0 6px 0;
+    }
+
+    .connect-us__separator {
+        display: none;
+    }
+
+}
+
+.auto-carousel {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.auto-carousel__item {
+    display: none;
+    font: 30px 'Jost Regular';
+    color: var(--secondary);
+}
+
+.auto-carousel__item-showed {
+    display: block;
+}
+
+@media (max-width: 800px) {
+    .auto-carousel {
+        height: auto;
+        margin: 0 0 10px 0;
+    }
+}
+
+.about {
+    width: 100%;
+}
+
+.about > .container {
+    align-items: center;
+    padding: 70px 0 40px 0;
+}
+
+.about__content {
+    padding: 0 0 0 45px;
+    z-index: 0;
+    position: relative;
+}
+
+.about__content > img {
+    display: none;
+    margin: auto;
+}
+
+.about__general {
+    font: 16px 'Jost SemiBold';
+    color: #4D2869;
+    margin: 0 0 21px 0;
+}
+
+.about__hint {
+    font: 16px 'Jost Regular';
+    color: #4D2869;
+    margin: 0 0 39px 0;
+}
+
+.contact-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0  0 28px 0;
+}
+
+.contact-email img {
+    margin: 0 12px 0 0;
+}
+
+.contact-email span {
+    color: #361153;
+}
+
+@media (max-width: 460px) {
+    .about > .container > img {
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media (max-width: 800px) {
+    .about > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about > .container > img {
+        display: none;
+    }
+
+    .about__content > img {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .about__content {
+        padding: 0;
+    }
+}
+
+.content-title {
+    position: relative;
+    font: 36px 'PlayfairDisplay Bold';
+    color: var(--primary);
+
+}
+
+.content-title::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: #EDE6F7;
+    position: absolute;
+    left: 0;
+    top: -15px;
+}
+
+.content-hint {
+    font: 14px 'PlayfairDisplay Regular';
+    color: #B7A7CB;
+    margin: 0 0 43px 0;
+}
+
+.yield {
+    width: 100%;
+}
+
+.yield > .container {
+    align-items: center;
+    padding: 70px 0 40px 0;
+}
+
+.yield__content {
+    padding: 0 45px 0 0;
+    z-index: 0;
+    position: relative;
+}
+
+.yield__content img {
+    display: none;
+    margin: auto;
+}
+
+.yield__general {
+    font: 16px 'Jost SemiBold';
+    color: #4D2869;
+    margin: 0 0 21px 0;
+}
+
+.yield__content ul li {
+    font: 16px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    margin: 0 0 6px 0;
+}
+
+.yield__content ul li:last-child {
+    margin: 0;
+}
+
+@media (max-width: 800px) {
+    .yield > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .yield > .container > img {
+        display: none;
+    }
+
+    .yield__content img {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .yield__content {
+        padding: 0;
+    }
+}
+
+.vaults {
+    width: 100%;
+}
+
+.vaults > .container {
+    align-items: center;
+    padding: 70px 0 40px 0;
+}
+
+.vaults__content {
+    padding: 0 0 0 45px;
+    z-index: 0;
+    position: relative;
+}
+
+.vaults__content img {
+    display: none;
+    margin: auto;
+}
+
+.vaults__general {
+    font: 16px 'Jost SemiBold';
+    color: #4D2869;
+    margin: 0 0 21px 0;
+}
+
+.vaults__content ul li {
+    font: 16px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    margin: 0 0 6px 0;
+}
+
+.vaults__content ul li:last-child {
+    margin: 40px 0 0 0;
+}
+
+@media (max-width: 800px) {
+    .vaults > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .vaults > .container > img {
+        display: none;
+    }
+
+    .vaults__content img {
+        display: block;
+        margin: 25px auto;
+    }
+
+    .vaults__content {
+        padding: 0;
+    }
+}
+
+.lending {
+    width: 100%;
+}
+
+.lending > .container {
+    align-items: center;
+    padding: 70px 0 40px 0;
+}
+
+.lending__content {
+    padding: 0 45px 0 0;
+    z-index: 0;
+    position: relative;
+}
+
+.lending__content img {
+    display: none;
+    margin: auto;
+}
+
+.lending__general {
+    font: 16px 'Jost SemiBold';
+    color: #4D2869;
+    margin: 0 0 21px 0;
+}
+
+.lending__hint {
+    font: 16px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    margin: 0 0 6px 0;
+}
+
+@media (max-width: 800px) {
+    .lending > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .lending > .container > img {
+        display: none;
+    }
+
+    .lending__content img {
+        width: 280px;
+        height: 280px;
+        display: block;
+        margin: 25px auto;
+    }
+
+    .lending__content {
+        padding: 0;
+    }
+}
+
+.integrations {
+    width: 100%;
+}
+
+.integrations__content {
+    width: 100%;
+}
+
+.integration-list {
+    margin: 0 0 60px 0;
+}
+
+.integration-list__row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0 0 35px 0;
+}
+
+.integration-list__row:last-child {
+    margin: 0;
+}
+
+.integration-list__row:nth-child(2) > .integration-item:first-child {
+    margin-left: 16.666667%;
+}
+
+.integration-item:nth-child(2) {
+    margin-left: 16.666667%;
+}
+
+.integration-item {
+    width: 33.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex: 0 0 33.333333%;
+}
+
+.integration-item__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 12px 0;
+}
+
+.integration-item__icon {
+    margin: 0 10px 0 0;
+}
+
+.integration-item__name {
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+}
+
+.integration-item__progress {
+    width: 100%;
+    height: 10px;
+    border-radius: 5px;
+}
+
+.integration-item__progress-yearn { background-color: #0063CA; }
+.integration-item__progress-aave { background-color: #658EB7; }
+.integration-item__progress-curve { background-color: #FCD303; }
+.integration-item__progress-compound { background-color: #00D798; }
+.integration-item__progress-uniswap { background-color: #F0A8D4; }
+.integration-item__progress-sushiswap { background-color: #EB596E; }
+
+@media (max-width: 800px) {
+    .integrations > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .integration-list__row {
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .integration-item {
+        width: 100%;
+        margin: 0 0 10px 0 !important;
+    }
+}
+
+.roadmap, .roadmap__content {
+    width: 100%;
+}
+
+.roadmap__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.roadmap__column {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap__item {
+    width: 100%;
+    display: flex;
+    margin: 0 0 35px 0;
+    padding: 0 20px;
+    cursor: default;
+}
+
+.roadmap__item:last-child {
+    margin: 0;
+}
+
+.roadmap__date {
+    min-width: 180px;
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    position: relative;
+}
+
+.roadmap__item:hover > .roadmap__date::before {
+    color: var(--secondary);
+}
+
+.roadmap__item:hover > .roadmap__date::after {
+    height: 100%;
+    background-color: var(--secondary);
+}
+
+.roadmap__date::before {
+    content: '⬤';
+    position: absolute;
+    color: #C4C4C4;
+    top: 0;
+    left: 145px;
+}
+
+.roadmap__date::after {
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 30%;
+    width: 2px;
+    background-color: #C4C4C4;
+    left: 152px;
+    top: 13px;
+    transition: height .6s;
+}
+
+.roadmap__info {
+    max-width: 80%;
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+}
+
+.roadmap__title {
+    font: 16px 'Jost SemiBold';
+    color: var(--primary);
+    margin: 0 0 15px 0;
+}
+
+.roadmap__info > ul li {
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    margin: 0 0 6px 0;
+}
+
+.roadmap__info > ul li:last-child {
+    margin: 0;
+}
+
+.roadmap__info > ul li:before {
+    content: '-';
+    margin: 0 4px 0 0;
+}
+
+.roadmap__date {
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+}
+
+@media (max-width: 800px) {
+    .roadmap > .container {
+        padding: 25px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .roadmap__container {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .roadmap__column {
+        width: 100%;
+        margin: 0;
+    }
+
+    .roadmap__item:last-child {
+        margin: 0 0 35px 0;
+    }
+
+    .roadmap__info {
+        max-width: 100%;
+    }
+
+}
+
+.sale {
+    width: 100%;
+}
+
+.sale > .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 0 40px 0;
+}
+
+.sale > .container > h2 {
+    font: 54px 'Jost Medium';
+    color: var(--primary);
+}
+
+.sale > .container > a {
+    font: 18px 'Jost Medium';
+    color: var(--secondary);
+}
+
+.sale__address {
+    font: 22px 'Jost SemiBold';
+    color: var(--primary);
+}
+
+.sale__default {
+    text-align: center;
+}
+
+p.sale__default {
+    font: 18px 'Jost Light';
+    color: rgba(77, 40, 105, 0.7);
+}
+
+b.sale__default{
+    font: 18px 'Jost Regular';
+    color: var(--primary);
+}
+
+@media (max-width: 800px) {
+    .sale > .container {
+        padding: 25px;
+    }
+
+    .sale__address {
+        font: 12px 'Jost SemiBold';
+        color: var(--primary);
+    }
+}
+
+.exchangers, .exchangers__content {
+    width: 100%;
+}
+
+.exchangers > .container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.exchangers__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 60px 0;
+}
+
+.exchanger__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.exchanger__icon {
+    margin: 0 27px 0 0;
+}
+
+.exchanger__name {
+    font: 18px 'Jost SemiBold';
+    color: var(--primary);
+}
+
+@media (max-width: 800px) {
+    .exchangers > .container {
+        padding: 25px;
+    }
+
+    .exchanger__item {
+        width: 200px;
+        justify-content: space-between;
+        margin: 0 0 15px 0;
+    }
+
+    .exchanger__item:last-child {
+        margin: 0;
+    }
+
+    .exchangers__list {
+        flex-direction: column;
+    }
+}
+
+.partners, .partners__content {
+    width: 100%;
+}
+
+.partners > .container {
+    flex-direction: row;
+    align-items: center;
+}
+
+.partners__list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 0 60px 0;
+}
+
+@media (max-width: 1050px) {
+    .partners__list > img:nth-child(4) {
+        width: 120px;
+    }
+
+    .partners__list > img:last-child {
+        width: 120px;
+    }
+}
+
+@media (max-width: 800px) {
+    .partners > .container {
+        padding: 25px;
+    }
+
+    .partners__list {
+        flex-direction: column;
+    }
+
+    .partners__list > img {
+        margin: 0 0 15px 0;
+    }
+
+    .partners__list > img:last-child {
+        margin: 0;
+    }
+
+    .partners__list > img:nth-child(4) {
+        width: initial;
+    }
+
+    .partners__list > img:last-child {
+        width: initial;
+    }
+}
+
+.our-team, .our-team__content {
+    width: 100%;
+}
+
+.our-team > .container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 70px 0 40px 0;
+}
+
+.team-list {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+}
+
+.teammate-info {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.teammate-info__icon {
+    width: 128px;
+    height: 128px;
+    background-color: #C4C4C4;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+}
+
+.teammate-info__name {
+    width: 100%;
+    margin: 15px 0;
+    font: 18px 'Jost SemiBold';
+    color: var(--primary);
+    text-align: center;
+}
+
+.teammate-info__position {
+    width: 100%;
+    font: 14px 'Jost Regular';
+    color: rgba(77, 40, 105, 0.7);
+    max-width: 128px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .our-team > .container {
+        flex-direction: column;
+        padding: 25px;
+    }
+
+    .team-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .teammate-info {
+        align-items: center;
+    }
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: var(--primary);
+    font: 20px 'Jost Regular';
+}
+
+footer > .container {
+    height: 100%;
+}
+
+@media (max-width: 800px) {
+    footer > .container {
+        padding: 25px;
+    }
+}

@@ -1,0 +1,16 @@
+.brand {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.brand__logo {
+    width: 26px;
+    height: 34px;
+    margin: 0 20px 0  0;
+}
+
+.brand__name {
+    font: var(--brand-name-font);
+}
