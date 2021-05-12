@@ -1,5 +1,6 @@
 const cors = require('cors');
 const path = require('path');
+const config = require('config');
 const express = require('express');
 
 const { serverOptions } = require('./utils/getSslCertificat');
