@@ -39,11 +39,6 @@ const MENU_ITEMS = {
         to: 3429,
         isActive: false
     },
-    '#sale': {
-        from: 3552,
-        to: 4124,
-        isActive: false
-    }
 };
 
 const navbarItems = document.querySelectorAll('.main-navigation__item');

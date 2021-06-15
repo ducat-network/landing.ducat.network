@@ -239,14 +239,6 @@
     margin: 0 0 70px 0;
 }
 
-@media (max-width: 470px) {
-    .home__join img {
-        width: 220px;
-        height: 230px;
-        margin: 0 0 10px 0;
-    }
-}
-
 @media (max-width: 800px) {
     .home > .container {
         padding: 20px 0 0 0;
@@ -287,10 +279,6 @@
     .home__contact {
         width: 100%;
         padding: 0 25px;
-    }
-
-    .home__join img {
-        margin: 0 0 10px 0;
     }
 
     .connect-us {
@@ -1061,4 +1049,26 @@ footer > .container {
     footer > .container {
         padding: 25px;
     }
+}
+
+.coin-info-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.coin-info-container div {
+    font: 18px 'Jost Medium';
+    width: 260px;
+    height: 85px;
+    position: absolute;
+    background: white;
+    border: 2px solid #000000;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 65px 4px;
+    flex-direction: column;
+    text-align: center;
 }

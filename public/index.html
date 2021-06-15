@@ -6,7 +6,10 @@
         <meta name='viewport' content='width=device-width, initial-scale=1.0'>
         <link rel='stylesheet' href='./css/index.css'>
         <link rel='shortcut icon' href='./assets/imgs/favicon.ico'>
+        <script src='./js/libs/axios.min.js' defer></script>
+        <script src='./js/libs/ethers-v4.min.js' defer></script>
         <script src='./js/navbar.js' defer></script>
+        <script src='./js/index.js' defer></script>
     </head>
     <body>
         <nav class='main-navigation'>
@@ -44,10 +47,6 @@
                         <span class='main-navigation__name'>Roadmap</span>
                         <div class='main-navigation__underline'></div>
                     </a>
-                    <a href='#sale' class='main-navigation__item main-navigation__item-hover'>
-                        <span class='main-navigation__name'>Sale</span>
-                        <div class='main-navigation__underline'></div>
-                    </a>
                 </div>
             </div>
             <div class='main-navigation__controller'></div>
@@ -65,8 +64,11 @@
                         </div>
                     </div>
                     <div class='home__join'>
-                        <img src='./assets/imgs/content/home_join_us.svg' alt='join_us'>
-                        <input type='button' value='COMMUNITY TOKEN SALE ›' onclick="document.querySelector('#sale').scrollIntoView({ alignToTop: true, behavior: 'smooth' })">
+                        <div class='coin-info-container'>
+                            <img src='./assets/imgs/content/ducat_table.png' alt="table" />
+                            <div id="collectedValue">ETH ?<br>$?</div>
+                        </div>
+                        <input type='button' value='COMMUNITY TOKEN SALE ›' onclick="window.open('https://sale.ducat.network/')">
                     </div>
                 </div>
                 <div class='home__contact'>
@@ -325,30 +327,6 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section id="sale" class="sale">
-            <div class="container">
-                <h2>DUCAT Token Sale</h2>
-                <p class="sale__default">Token Sale Contract:</p>
-                <b class="sale__address">0x06343c67f77BDd4BaccebbbA0Ce65C8338394b38</b>
-                <p class="sale__default">Send ETH to this contract to receive DUCAT. Price of 1 DUCAT - 0.0004 ETH</p>
-                <p class="sale__default">1ETH - 2500 DUCAT</p>
-                <p class="sale__default">You can send ETH any quantity.</p>
-                
-                <br>
-                <p class="sale__default">Send only from personal wallets where you own the private key (such as MyEtherWallet, MyCrypto, ImToken, Metamask and etc.)</p>
-                <br>
-                <b class="sale__default">Please set Gas Limit to 150,000 otherwise your transaction will fail.</b>
-                <br>
-                <br>
-                <b class="sale__default">Guaranteed online draw upon completion of the public sale100 ETH + 100000 DUCAT</b>
-                <p class="sale__default">*After the end of the public sale, the starting price for Uniswap will be 1 DUCAT FOR 0.00082 ETH</p>
-                <br>
-                <br>
-                <br>
-                <br>
-                <a href="https://etherscan.io/address/0x06343c67f77BDd4BaccebbbA0Ce65C8338394b38" target="_blank"> &gt; &gt; Contract Source Code &lt; &lt; </a>
             </div>
         </section>
         <section id='exchangers' class='exchangers'>
